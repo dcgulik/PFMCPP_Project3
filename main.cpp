@@ -196,53 +196,53 @@ Part 1b - Step 2: Assignment
         c) pick properties that can eventually be represented with 
         'int float double bool char std::string'.
 
-Thing 1)
+Thing 1) exercise bike 
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of seat adjustments
+    2) maximum resistance
+    3) number of program modes
+    4) number of pulse readers
+    5) power consumed 
 3 things it can do:
-    1)
-    2)
-    3)
+    1) begin a workout program
+    2) read pulse
+    3) calculate caloric burn
 
-Thing 2)
+Thing 2) department store
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of employees
+    2) number of departments
+    3) amount of electricity used per month
+    4) amount of profit per week
+    5) hours of operation
 3 things it can do:
-    1)
-    2)
-    3)
+    1) open/close 
+    2) host a sale
+    3) sell an item to a customer
 
-Thing 3)
+Thing 3) golf course
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of holes
+    2) number of golfers per week
+    3) size, in square feet
+    4) number of golfers per party
+    5) members-only (or not)
 3 things it can do:
-    1)
-    2)
-    3)
+    1) host a tournament
+    2) suspend play for weather reasons
+    3) change hole location on green
 
-Thing 4)
+Thing 4) library
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of books
+    2) number of library cards/users
+    3) number of employees/volunteers
+    4) book/media checkout periods
+    5) late fees, amounts, etc.
 3 things it can do:
-    1)
-    2)
-    3)
+    1) host a book sale
+    2) check a book out to a library card
+    3) suspend privileges to user with delinquent checkouts/fees
 */
 
 /*
