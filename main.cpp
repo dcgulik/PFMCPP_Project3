@@ -337,17 +337,17 @@ Define an object that is made of 5 sub-objects.
     These 5 sub-objects will not be defined using Primitives, but instead will be their own UDTs 
     you'll define these 5 sub-objects in Part 1d.
 
-Thing 10) 
+Thing 10) Snare Drum
 5 properties:
-    1) 
-    2) 
-    3) 
-    4) 
-    5) 
+    1) Head
+    2) Wires
+    3) Strainer
+    4) Shell
+    5) Lugs
 3 things it can do:
-    1) 
-    2)
-    3)
+    1) rimshot
+    2) rim click
+    3) brush
  */
 
  /*
