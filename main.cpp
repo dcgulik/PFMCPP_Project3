@@ -198,11 +198,11 @@ Part 1b - Step 2: Assignment
 
 Thing 1) exercise bike 
 5 properties:
-    1) number of seat adjustments
-    2) maximum resistance
-    3) number of program modes
-    4) number of pulse readers
-    5) power consumed 
+    1) number of seat adjustments (int)
+    2) maximum resistance (float)
+    3) number of program modes (int)
+    4) number of pulse readers (int)
+    5) power consumed (float)
 3 things it can do:
     1) begin a workout program
     2) read pulse
@@ -210,11 +210,11 @@ Thing 1) exercise bike
 
 Thing 2) department store
 5 properties:
-    1) number of employees
-    2) number of departments
-    3) amount of electricity used per month
-    4) amount of profit per week
-    5) hours of operation
+    1) number of employees (int)
+    2) number of departments (int)
+    3) amount of electricity used per month (float)
+    4) amount of profit per week (int)
+    5) hours of operation (int)
 3 things it can do:
     1) open/close 
     2) host a sale
@@ -222,11 +222,11 @@ Thing 2) department store
 
 Thing 3) golf course
 5 properties:
-    1) number of holes
-    2) number of golfers per week
-    3) size, in square feet
-    4) number of golfers per party
-    5) members-only (or not)
+    1) number of holes (int)
+    2) number of golfers per week (double)
+    3) size, in square feet (float)
+    4) number of golfers per party (int)
+    5) members-only (or not) (bool)
 3 things it can do:
     1) host a tournament
     2) suspend play for weather reasons
@@ -234,11 +234,11 @@ Thing 3) golf course
 
 Thing 4) library
 5 properties:
-    1) number of books
-    2) number of library cards/users
-    3) number of employees/volunteers
-    4) book/media checkout periods
-    5) late fees, amounts, etc.
+    1) number of books (double)
+    2) number of library cards/users (double)
+    3) number of employees/volunteers (int)
+    4) book/media checkout periods (int)
+    5) late fees, amounts, etc. (float)
 3 things it can do:
     1) host a book sale
     2) check a book out to a library card
@@ -310,7 +310,7 @@ Part 1c - Step 2: Assignment
 ===================
     - write the name of the primitive type you'll be using after each property in UDTs 1-4 you created in Part 1b:
     - pick properties that can be represented with 'int float double bool char std::string'.
-    
+     
 example: 
     Display:
         Number of Pixels (int)
@@ -339,13 +339,13 @@ Define an object that is made of 5 sub-objects.
 
 Thing 10)
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) 
+    2) 
+    3) 
+    4) 
+    5) 
 3 things it can do:
-    1)
+    1) 
     2)
     3)
  */
