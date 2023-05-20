@@ -196,53 +196,7 @@ Part 1b - Step 2: Assignment
         c) pick properties that can eventually be represented with 
         'int float double bool char std::string'.
 
-Thing 1) exercise bike 
-5 properties:
-    1) number of seat adjustments (int)
-    2) maximum resistance (float)
-    3) number of program modes (int)
-    4) number of pulse readers (int)
-    5) power consumed (float)
-3 things it can do:
-    1) begin a workout program
-    2) read pulse
-    3) calculate caloric burn
 
-Thing 2) department store
-5 properties:
-    1) number of employees (int)
-    2) number of departments (int)
-    3) amount of electricity used per month (float)
-    4) amount of profit per week (int)
-    5) name (std::string)
-3 things it can do:
-    1) open/close 
-    2) host a sale
-    3) sell an item to a customer
-
-Thing 3) golf course
-5 properties:
-    1) number of holes (int)
-    2) number of golfers per week (double)
-    3) size, in square feet (float)
-    4) number of golfers per party (int)
-    5) members-only (or not) (bool)
-3 things it can do:
-    1) host a tournament
-    2) suspend play for weather reasons
-    3) change hole location on green
-
-Thing 4) library
-5 properties:
-    1) number of books (double)
-    2) number of library cards/users (double)
-    3) number of employees/volunteers (int)
-    4) book/media checkout periods (int)
-    5) late fees, amounts, etc. (float)
-3 things it can do:
-    1) host a book sale
-    2) check a book out to a library card
-    3) suspend privileges to user with delinquent checkouts/fees
 */
 
 /*
@@ -337,17 +291,7 @@ Define an object that is made of 5 sub-objects.
     These 5 sub-objects will not be defined using Primitives, but instead will be their own UDTs 
     you'll define these 5 sub-objects in Part 1d.
 
-Thing 10) Snare Drum
-5 properties:
-    1) Head
-    2) Wires
-    3) Strainer
-    4) Shell
-    5) Lugs
-3 things it can do:
-    1) rimshot
-    2) rim click
-    3) brush
+
  */
 
  /*
@@ -433,7 +377,108 @@ example:
     If #10's first property was 'Engine', then `Thing 5)` will be `Engine`. 
     You will need to provide 5 properties and 3 member functions of that Engine object in plain English.
     Remember to pick properties that can be represented with 'int float double bool char std::string'.
+    
 
+ */
+
+/*
+=================
+Part 1d - Step 3: Commit
+=================
+Now that you've made changes to the code, make a commit!
+Be sure to make the commit message meaningful.
+*/
+
+/*
+================
+Part 1d - Step 4: Assignment
+================
+    - write the name of the primitive type you'll be using after each property for UDTs 5 - 9.
+    - You already did this for UDTs 1-4 in Part 1c.
+    - Pick properties that can be represented with 'int float double bool char std::string'
+    
+example: 
+    Display:
+        Number of Pixels (int)
+        Amount of Power consumed (milliwatt-hours) (float)
+        Brightness (double)
+        width in cm (int)
+        height in cm (int)
+*/
+
+/*
+=================
+Part 1d - Step 5: Commit
+=================
+Now that you've made changes to the code, make a commit!
+Be sure to make the commit message meaningful.
+*/
+
+/*
+===================
+Part 1d - Step 6: assignment
+===================
+You've just defined 10 UDTs!
+4 of them are unrelated (UDTs 1-4).
+5 of them form the sub-objects that make up the 10th UDT. 
+
+MOVE THEM to the space below this block comment and put them in numerical order 
+(1 - 10).
+    DO NOT COPY. 
+    CUT AND PASTE. 
+    I do not want to see 2 copies of your Plain-English UDTs.  
+    I only want to see the 10 UDTs written BELOW this block comment, in numerical order (1 - 10).
+    simply CUT and PASTE them in the space provided below:
+*/
+
+Thing 1) exercise bike 
+5 properties:
+    1) number of seat adjustments (int)
+    2) maximum resistance (float)
+    3) number of program modes (int)
+    4) number of pulse readers (int)
+    5) power consumed (float)
+3 things it can do:
+    1) begin a workout program
+    2) read pulse
+    3) calculate caloric burn
+
+Thing 2) department store
+5 properties:
+    1) number of employees (int)
+    2) number of departments (int)
+    3) amount of electricity used per month (float)
+    4) amount of profit per week (int)
+    5) name (std::string)
+3 things it can do:
+    1) open/close 
+    2) host a sale
+    3) sell an item to a customer
+
+Thing 3) golf course
+5 properties:
+    1) number of holes (int)
+    2) number of golfers per week (double)
+    3) size, in square feet (float)
+    4) number of golfers per party (int)
+    5) members-only (or not) (bool)
+3 things it can do:
+    1) host a tournament
+    2) suspend play for weather reasons
+    3) change hole location on green
+
+Thing 4) library
+5 properties:
+    1) number of books (double)
+    2) number of library cards/users (double)
+    3) number of employees/volunteers (int)
+    4) book/media checkout periods (int)
+    5) late fees, amounts, etc. (float)
+3 things it can do:
+    1) host a book sale
+    2) check a book out to a library card
+    3) suspend privileges to user with delinquent checkouts/fees
+    
 Thing 5) Head
 5 properties:
     1) diameter (int)
@@ -493,59 +538,18 @@ Thing 9) Lugs
     1) tighten drum head
     2) loosen drum head
     3) overtighten
- */
 
-/*
-=================
-Part 1d - Step 3: Commit
-=================
-Now that you've made changes to the code, make a commit!
-Be sure to make the commit message meaningful.
-*/
-
-/*
-================
-Part 1d - Step 4: Assignment
-================
-    - write the name of the primitive type you'll be using after each property for UDTs 5 - 9.
-    - You already did this for UDTs 1-4 in Part 1c.
-    - Pick properties that can be represented with 'int float double bool char std::string'
-    
-example: 
-    Display:
-        Number of Pixels (int)
-        Amount of Power consumed (milliwatt-hours) (float)
-        Brightness (double)
-        width in cm (int)
-        height in cm (int)
-*/
-
-/*
-=================
-Part 1d - Step 5: Commit
-=================
-Now that you've made changes to the code, make a commit!
-Be sure to make the commit message meaningful.
-*/
-
-/*
-===================
-Part 1d - Step 6: assignment
-===================
-You've just defined 10 UDTs!
-4 of them are unrelated (UDTs 1-4).
-5 of them form the sub-objects that make up the 10th UDT. 
-
-MOVE THEM to the space below this block comment and put them in numerical order 
-(1 - 10).
-    DO NOT COPY. 
-    CUT AND PASTE. 
-    I do not want to see 2 copies of your Plain-English UDTs.  
-    I only want to see the 10 UDTs written BELOW this block comment, in numerical order (1 - 10).
-    simply CUT and PASTE them in the space provided below:
-*/
-
-
+Thing 10) Snare Drum
+5 properties:
+    1) Head
+    2) Wires
+    3) Strainer
+    4) Shell
+    5) Lugs
+3 things it can do:
+    1) rimshot
+    2) rim click
+    3) brush
 
 
 
