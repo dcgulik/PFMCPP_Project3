@@ -523,7 +523,7 @@ MOVE THEM to the space below this block comment and put them in numerical order
 //     4) bearing edge angle (float)
 //     5) depth (int)
 // 3 things it can do:
-//     1) apply muffling
+//     1) crack
 //     2) be vented
 //     3) resonate
 
@@ -547,9 +547,9 @@ MOVE THEM to the space below this block comment and put them in numerical order
 //     4) Shell
 //     5) Lugs
 // 3 things it can do:
-//     1) rimshot
-//     2) rim click
-//     3) brush
+//     1) drive backbeat
+//     2) define drum sound
+//     3) break
 
 
 
