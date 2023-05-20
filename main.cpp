@@ -443,6 +443,11 @@ MOVE THEM to the space below this block comment and put them in numerical order
 //     2) read pulse
 //     3) calculate caloric burn
 
+struct ExerciseBike
+{
+
+};
+
 // Thing 2) department store
 // 5 properties:
 //     1) number of employees (int)
@@ -454,6 +459,11 @@ MOVE THEM to the space below this block comment and put them in numerical order
 //     1) open/close 
 //     2) host a sale
 //     3) sell an item to a customer
+
+struct DepartmentStore
+{
+
+};
 
 // Thing 3) golf course
 // 5 properties:
@@ -467,6 +477,11 @@ MOVE THEM to the space below this block comment and put them in numerical order
 //     2) suspend play for weather reasons
 //     3) change hole location on green
 
+struct GolfCourse
+{
+
+};
+
 // Thing 4) library
 // 5 properties:
 //     1) number of books (double)
@@ -478,8 +493,13 @@ MOVE THEM to the space below this block comment and put them in numerical order
 //     1) host a book sale
 //     2) check a book out to a library card
 //     3) suspend privileges to user with delinquent checkouts/fees
+
+struct Library
+{
+
+};
     
-// Thing 5) Head
+// Thing 5) Drumhead
 // 5 properties:
 //     1) diameter (int)
 //     2) ply thickness (float)
@@ -491,7 +511,12 @@ MOVE THEM to the space below this block comment and put them in numerical order
 //     2) break
 //     3) tighten/loosen
 
-// Thing 6) Wires
+struct Drumhead
+{
+
+};
+
+// Thing 6) Snare Wires
 // 5 properties:
 //     1) number of wires (int)
 //     2) material (std::string)
@@ -503,7 +528,12 @@ MOVE THEM to the space below this block comment and put them in numerical order
 //     2) buzz
 //     3) break a wire
 
-// Thing 7) Strainer
+struct SnareWires
+{
+
+};
+
+// Thing 7) Snare Strainer
 // 5 properties:
 //     1) mounting distance (float)
 //     2) number of mounting screws (int)
@@ -515,7 +545,12 @@ MOVE THEM to the space below this block comment and put them in numerical order
 //     2) disengage snares
 //     3) tighten snares
 
-// Thing 8) Shell
+struct SnareStrainer
+{
+
+};
+
+// Thing 8) Drum Shell
 // 5 properties:
 //     1) brand (std::string)
 //     2) material (std::string)
@@ -526,6 +561,11 @@ MOVE THEM to the space below this block comment and put them in numerical order
 //     1) crack
 //     2) be vented
 //     3) resonate
+
+struct DrumShell
+{
+
+};
 
 // Thing 9) Lugs
 // 5 properties:
@@ -539,6 +579,11 @@ MOVE THEM to the space below this block comment and put them in numerical order
 //     2) loosen drum head
 //     3) overtighten
 
+struct Lug
+{
+
+};
+
 // Thing 10) Snare Drum
 // 5 properties:
 //     1) Head
@@ -551,6 +596,10 @@ MOVE THEM to the space below this block comment and put them in numerical order
 //     2) define drum sound
 //     3) break
 
+struct SnareDrum
+{
+
+};
 
 
 
