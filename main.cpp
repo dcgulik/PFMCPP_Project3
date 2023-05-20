@@ -431,125 +431,125 @@ MOVE THEM to the space below this block comment and put them in numerical order
     simply CUT and PASTE them in the space provided below:
 */
 
-Thing 1) exercise bike 
-5 properties:
-    1) number of seat adjustments (int)
-    2) maximum resistance (float)
-    3) number of program modes (int)
-    4) number of pulse readers (int)
-    5) power consumed (float)
-3 things it can do:
-    1) begin a workout program
-    2) read pulse
-    3) calculate caloric burn
+// Thing 1) exercise bike 
+// 5 properties:
+//     1) number of seat adjustments (int)
+//     2) maximum resistance (float)
+//     3) number of program modes (int)
+//     4) number of pulse readers (int)
+//     5) power consumed (float)
+// 3 things it can do:
+//     1) begin a workout program
+//     2) read pulse
+//     3) calculate caloric burn
 
-Thing 2) department store
-5 properties:
-    1) number of employees (int)
-    2) number of departments (int)
-    3) amount of electricity used per month (float)
-    4) amount of profit per week (int)
-    5) name (std::string)
-3 things it can do:
-    1) open/close 
-    2) host a sale
-    3) sell an item to a customer
+// Thing 2) department store
+// 5 properties:
+//     1) number of employees (int)
+//     2) number of departments (int)
+//     3) amount of electricity used per month (float)
+//     4) amount of profit per week (int)
+//     5) name (std::string)
+// 3 things it can do:
+//     1) open/close 
+//     2) host a sale
+//     3) sell an item to a customer
 
-Thing 3) golf course
-5 properties:
-    1) number of holes (int)
-    2) number of golfers per week (double)
-    3) size, in square feet (float)
-    4) number of golfers per party (int)
-    5) members-only (or not) (bool)
-3 things it can do:
-    1) host a tournament
-    2) suspend play for weather reasons
-    3) change hole location on green
+// Thing 3) golf course
+// 5 properties:
+//     1) number of holes (int)
+//     2) number of golfers per week (double)
+//     3) size, in square feet (float)
+//     4) number of golfers per party (int)
+//     5) members-only (or not) (bool)
+// 3 things it can do:
+//     1) host a tournament
+//     2) suspend play for weather reasons
+//     3) change hole location on green
 
-Thing 4) library
-5 properties:
-    1) number of books (double)
-    2) number of library cards/users (double)
-    3) number of employees/volunteers (int)
-    4) book/media checkout periods (int)
-    5) late fees, amounts, etc. (float)
-3 things it can do:
-    1) host a book sale
-    2) check a book out to a library card
-    3) suspend privileges to user with delinquent checkouts/fees
+// Thing 4) library
+// 5 properties:
+//     1) number of books (double)
+//     2) number of library cards/users (double)
+//     3) number of employees/volunteers (int)
+//     4) book/media checkout periods (int)
+//     5) late fees, amounts, etc. (float)
+// 3 things it can do:
+//     1) host a book sale
+//     2) check a book out to a library card
+//     3) suspend privileges to user with delinquent checkouts/fees
     
-Thing 5) Head
-5 properties:
-    1) diameter (int)
-    2) ply thickness (float)
-    3) number of plies (int)
-    4) brand (std::string)
-    5) material (std::string)
-3 things it can do:
-    1) add muffling
-    2) break
-    3) tighten/loosen
+// Thing 5) Head
+// 5 properties:
+//     1) diameter (int)
+//     2) ply thickness (float)
+//     3) number of plies (int)
+//     4) brand (std::string)
+//     5) material (std::string)
+// 3 things it can do:
+//     1) add muffling
+//     2) break
+//     3) tighten/loosen
 
-Thing 6) Wires
-5 properties:
-    1) number of wires (int)
-    2) material (std::string)
-    3) wire gauge (float)
-    4) brand (std::string)
-    5) with straps/without straps (bool)
-3 things it can do:
-    1) crack
-    2) buzz
-    3) break a wire
+// Thing 6) Wires
+// 5 properties:
+//     1) number of wires (int)
+//     2) material (std::string)
+//     3) wire gauge (float)
+//     4) brand (std::string)
+//     5) with straps/without straps (bool)
+// 3 things it can do:
+//     1) crack
+//     2) buzz
+//     3) break a wire
 
-Thing 7) Strainer
-5 properties:
-    1) mounting distance (float)
-    2) number of mounting screws (int)
-    3) maximum tension (float)
-    4) brand (std::string)
-    5) type (std::string)
-3 things it can do:
-    1) engage snares
-    2) disengage snares
-    3) tighten snares
+// Thing 7) Strainer
+// 5 properties:
+//     1) mounting distance (float)
+//     2) number of mounting screws (int)
+//     3) maximum tension (float)
+//     4) brand (std::string)
+//     5) type (std::string)
+// 3 things it can do:
+//     1) engage snares
+//     2) disengage snares
+//     3) tighten snares
 
-Thing 8) Shell
-5 properties:
-    1) brand (std::string)
-    2) material (std::string)
-    3) diameter (int)
-    4) bearing edge angle (float)
-    5) depth (int)
-3 things it can do:
-    1) apply muffling
-    2) be vented
-    3) resonate
+// Thing 8) Shell
+// 5 properties:
+//     1) brand (std::string)
+//     2) material (std::string)
+//     3) diameter (int)
+//     4) bearing edge angle (float)
+//     5) depth (int)
+// 3 things it can do:
+//     1) apply muffling
+//     2) be vented
+//     3) resonate
 
-Thing 9) Lugs
-5 properties:
-    1) brand (std::string)
-    2) length (int)
-    3) single-sided? (bool)
-    4) SKU (std::string)
-    5) material (std::string)
-3 things it can do:
-    1) tighten drum head
-    2) loosen drum head
-    3) overtighten
+// Thing 9) Lugs
+// 5 properties:
+//     1) brand (std::string)
+//     2) length (int)
+//     3) single-sided? (bool)
+//     4) SKU (std::string)
+//     5) material (std::string)
+// 3 things it can do:
+//     1) tighten drum head
+//     2) loosen drum head
+//     3) overtighten
 
-Thing 10) Snare Drum
-5 properties:
-    1) Head
-    2) Wires
-    3) Strainer
-    4) Shell
-    5) Lugs
-3 things it can do:
-    1) rimshot
-    2) rim click
-    3) brush
+// Thing 10) Snare Drum
+// 5 properties:
+//     1) Head
+//     2) Wires
+//     3) Strainer
+//     4) Shell
+//     5) Lugs
+// 3 things it can do:
+//     1) rimshot
+//     2) rim click
+//     3) brush
 
 
 
