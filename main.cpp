@@ -214,7 +214,7 @@ Thing 2) department store
     2) number of departments (int)
     3) amount of electricity used per month (float)
     4) amount of profit per week (int)
-    5) hours of operation (int)
+    5) name (std::string)
 3 things it can do:
     1) open/close 
     2) host a sale
@@ -337,7 +337,7 @@ Define an object that is made of 5 sub-objects.
     These 5 sub-objects will not be defined using Primitives, but instead will be their own UDTs 
     you'll define these 5 sub-objects in Part 1d.
 
-Thing 10)
+Thing 10) 
 5 properties:
     1) 
     2) 
