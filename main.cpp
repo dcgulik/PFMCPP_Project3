@@ -434,65 +434,65 @@ example:
     You will need to provide 5 properties and 3 member functions of that Engine object in plain English.
     Remember to pick properties that can be represented with 'int float double bool char std::string'.
 
-Thing 5)
+Thing 5) Head
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) diameter (int)
+    2) ply thickness (float)
+    3) number of plies (int)
+    4) brand (std::string)
+    5) material (std::string)
 3 things it can do:
-    1)
-    2)
-    3)
+    1) add muffling
+    2) break
+    3) tighten/loosen
 
-Thing 6)
+Thing 6) Wires
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of wires (int)
+    2) material (std::string)
+    3) wire gauge (float)
+    4) brand (std::string)
+    5) with straps/without straps (bool)
 3 things it can do:
-    1)
-    2)
-    3)
+    1) crack
+    2) buzz
+    3) break a wire
 
-Thing 7)
+Thing 7) Strainer
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) mounting distance (float)
+    2) number of mounting screws (int)
+    3) maximum tension (float)
+    4) brand (std::string)
+    5) type (std::string)
 3 things it can do:
-    1)
-    2)
-    3)
+    1) engage snares
+    2) disengage snares
+    3) tighten snares
 
-Thing 8)
+Thing 8) Shell
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) brand (std::string)
+    2) material (std::string)
+    3) diameter (int)
+    4) bearing edge angle (float)
+    5) depth (int)
 3 things it can do:
-    1)
-    2)
-    3)
+    1) apply muffling
+    2) be vented
+    3) resonate
 
-Thing 9)
+Thing 9) Lugs
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) brand (std::string)
+    2) length (int)
+    3) single-sided? (bool)
+    4) SKU (std::string)
+    5) material (std::string)
 3 things it can do:
-    1)
-    2)
-    3)
+    1) tighten drum head
+    2) loosen drum head
+    3) overtighten
  */
 
 /*
