@@ -487,24 +487,6 @@ float sellItem(); // returns the total sale price
 
 struct GolfCourse
 {
-// 5 properties:
-//     1) number of holes (int)
-int numHoles = 18;
-//     2) number of golfers per week (double)
-double golfersPerWeek = 15000;
-//     3) length, in yards (float)
-float courseLength = 6500;
-//     4) number of golfers per party (int)
-int golfersPerParty = 4;
-//     5) members-only (or not) (bool)
-bool membersOnly = false;
-// 3 things it can do:
-//     1) host a tournament
-void hostTournament(int numParticipants, int tournamentDate, float purse, float firstPlacePercentage, float secondPlacePercentage, float thirdPlacePercentage);
-//     2) suspend play for weather reasons
-bool suspendPlay(float duration); // returns false to suspend play for the specific duration; would then return back to true, resuming play 
-//     3) change hole location on green
-void changeHoleLocation(int holeNum, float latitude, float longitude); 
     struct Golfer
     {
 //     5 properties:
@@ -528,6 +510,26 @@ void changeHoleLocation(int holeNum, float latitude, float longitude);
     float chip(float power, float accuracy); // returns distance to tee
 
     };
+// 5 properties:
+//     1) number of holes (int)
+int numHoles = 18;
+//     2) number of golfers per week (double)
+double golfersPerWeek = 15000;
+//     3) length, in yards (float)
+float courseLength = 6500;
+//     4) number of golfers per party (int)
+int golfersPerParty = 4;
+//     5) members-only (or not) (bool)
+bool membersOnly = false;
+// 3 things it can do:
+//     1) host a tournament
+void hostTournament(int numParticipants, int tournamentDate, float purse, float firstPlacePercentage, float secondPlacePercentage, float thirdPlacePercentage); 
+//     2) suspend play for weather reasons
+bool suspendPlay(float duration); // returns false to suspend play for the specific duration; would then return back to true, resuming play 
+//     3) change hole location on green
+void changeHoleLocation(int holeNum, float latitude, float longitude, Golfer tester); 
+
+Golfer golfPro;
 
 };
 
@@ -576,9 +578,11 @@ float lateFee = .35f;
 //     1) host a book sale
 void hostBookSale(double date, int numBooks, std::string saleName);
 //     2) check a book out to a library card
-bool checkOutBook(); // returns true to denote book as checked out
+bool checkOutBook(LibraryCard libraryCard); // returns true to denote book as checked out
 //     3) suspend privileges to user with delinquent checkouts/fees
-bool suspendCheckoutPrivileges(); // returns false to suspend user privileges until determined threshold is met
+bool suspendCheckoutPrivileges(LibraryCard libraryCard); // returns false to suspend user privileges until determined threshold is met
+
+LibraryCard memberOfTheMonth;
 
     
 };
