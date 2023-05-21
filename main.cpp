@@ -505,6 +505,29 @@ void hostTournament(int numParticipants, int tournamentDate, float purse, float 
 bool suspendPlay(float duration); // returns false to suspend play for the specific duration; would then return back to true, resuming play 
 //     3) change hole location on green
 void changeHoleLocation(int holeNum, float latitude, float longitude); 
+    struct Golfer
+    {
+//     5 properties:
+//     1) Name (std::string)
+    std::string name = " ";
+//     2) Handicap (int)
+    int handicap = 0;
+//     3) Years of Experience (int)
+    int yearsOfExperience = 0;
+//     4) Tournament winner? (bool)
+    bool tournamentWinner = false;
+//     5) Tournaments won (int)
+    int tournamentsWon = 0;
+
+//     3 things it can do:
+//     1) drive
+    float drive(float power, float accuracy); // returns distance to tee
+//     2) putt
+    float putt(float power, float accuracy); // returns distance to tee
+//     3) chip
+    float chip(float power, float accuracy); // returns distance to tee
+
+    };
 
 };
 
@@ -513,6 +536,31 @@ void changeHoleLocation(int holeNum, float latitude, float longitude);
 
 struct Library
 {
+
+struct LibraryCard
+    {
+//    5 properties:
+//     1) ID number (int)
+        int iDNumber = 000000000;
+//     2) Name (std::string)
+        std::string name = " ";
+//     3) Number of books checked out (int)
+        int booksCheckedOut = 0;
+//     4) Fees due (float)
+        float feesDue = 0.0f;
+//     5) Registration date (double)
+        double registrationDate = 00000000;
+
+// 3 things it can do:
+//     1) return a list of books checked out
+        std::string allBooksCheckedOut(); // returns a printout of titles of all books             checked out by that card
+//     2) calculate total fees owed over the past year
+        float calculateYearlyFeesOwed(int year); // returns total fees owed for given              year
+//     3) grant access to computer terminal
+        void grantComputerAccess(float duration = 1.0f);
+
+    };
+
 // 5 properties:
 //     1) number of books (double)
 double numBooks = 35000;
@@ -526,11 +574,13 @@ int checkoutPeriod = 14;
 float lateFee = .35f; 
 // 3 things it can do:
 //     1) host a book sale
-void hostBookSale(int date, int numBooks, std::string saleName);
+void hostBookSale(double date, int numBooks, std::string saleName);
 //     2) check a book out to a library card
 bool checkOutBook(); // returns true to denote book as checked out
 //     3) suspend privileges to user with delinquent checkouts/fees
 bool suspendCheckoutPrivileges(); // returns false to suspend user privileges until determined threshold is met
+
+    
 };
     
 // Thing 5) Drumhead
