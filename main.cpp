@@ -873,59 +873,56 @@ Fix anything that needs fixing
 
 You should see "good to go" in the program output
 */
+
 // Thing 1) exercise bike 
-
-
 struct ExerciseBike
 {
 // 5 properties:
 //     1) number of seat adjustments (int)
-int numSeatAdjustments = 12;
+    int numSeatAdjustments = 12;
 //     2) maximum resistance (float)
-float maximumResistance = 15.0f;
+    float maximumResistance = 15.0f;
 //     3) number of program modes (int)
-int numProgramModes = 8;
+    int numProgramModes = 8;
 //     4) number of pulse readers (int)
-int numPulseReaders = 2;
+    int numPulseReaders = 2;
 //     5) power consumed (float)
-int powerConsumed = 12.0f;
+    int powerConsumed = 12.0f;
 // 3 things it can do:
 //     1) begin a workout program
-void beginWorkoutProgram(int selectedProgram);
+    void beginWorkoutProgram(int selectedProgram);
 //     2) read pulse
-float readPulse(); // returns pulse in beats per minute
+    float readPulse(); // returns pulse in beats per minute
 //     3) calculate caloric burn
-float calculateCaloricBurn(float weight); // returns total calories burned during session
+    float calculateCaloricBurn(float weight); // returns total calories burned during session
 };
 
 // Thing 2) department store
-
-
 struct DepartmentStore
 {
 // 5 properties:
 //     1) number of employees (int)
-int numEmployees = 70;
+    int numEmployees = 70;
 //     2) number of departments (int)
-int numDepartments = 16;
+    int numDepartments = 16;
 //     3) amount of electricity used per month (float)
-float electricityPerWeek = 1200.0f;
+    float electricityPerWeek = 1200.0f;
 //     4) amount of profit per week (int)
-int profitPerWeek = 60000;
+    int profitPerWeek = 60000;
 //     5) name (std::string)
-std::string name = "David's";
+    std::string name = "David's";
 // 3 things it can do:
 //     1) open/close 
-bool open(); // returns true to denote open store
-bool close(); // returns false to denote closed store
+    bool open(); // returns true to denote open store
+
+    bool close(); // returns false to denote closed store
 //     2) host a sale
-void hostSale(float discountRate);
+    void hostSale(float discountRate);
 //     3) sell an item to a customer
-float sellItem(); // returns the total sale price
+    float sellItem(); // returns the total sale price
 };
 
 // Thing 3) golf course
-
 
 struct GolfCourse
 {
@@ -933,55 +930,49 @@ struct GolfCourse
     {
 //     5 properties:
 //     1) Name (std::string)
-    std::string name = " ";
+        std::string name = " ";
 //     2) Handicap (int)
-    int handicap = 0;
+        int handicap = 0;
 //     3) Years of Experience (int)
-    int yearsOfExperience = 0;
+        int yearsOfExperience = 0;
 //     4) Tournament winner? (bool)
-    bool tournamentWinner = false;
+        bool tournamentWinner = false;
 //     5) Tournaments won (int)
-    int tournamentsWon = 0;
-
+        int tournamentsWon = 0;
 //     3 things it can do:
 //     1) drive
-    float drive(float power, float accuracy); // returns distance to tee
+        float drive(float power, float accuracy); // returns distance to tee
 //     2) putt
-    float putt(float power, float accuracy); // returns distance to tee
+        float putt(float power, float accuracy); // returns distance to tee
 //     3) chip
-    float chip(float power, float accuracy); // returns distance to tee
-
+        float chip(float power, float accuracy); // returns distance to tee
     };
 // 5 properties:
 //     1) number of holes (int)
-int numHoles = 18;
+    int numHoles = 18;
 //     2) number of golfers per week (double)
-double golfersPerWeek = 15000;
+    double golfersPerWeek = 15000;
 //     3) length, in yards (float)
-float courseLength = 6500;
+    float courseLength = 6500;
 //     4) number of golfers per party (int)
-int golfersPerParty = 4;
+    int golfersPerParty = 4;
 //     5) members-only (or not) (bool)
-bool membersOnly = false;
+    bool membersOnly = false;
 // 3 things it can do:
 //     1) host a tournament
-void hostTournament(int numParticipants, int tournamentDate, float purse, float firstPlacePercentage, float secondPlacePercentage, float thirdPlacePercentage); 
+    void hostTournament(int numParticipants, int tournamentDate, float purse, float firstPlacePercentage,         float secondPlacePercentage, float thirdPlacePercentage); 
 //     2) suspend play for weather reasons
-bool suspendPlay(float duration); // returns false to suspend play for the specific duration; would then return back to true, resuming play 
+    bool suspendPlay(float duration); // returns false to suspend play for the specific duration; would then return back to true, resuming play 
 //     3) change hole location on green
-void changeHoleLocation(int holeNum, float latitude, float longitude, Golfer tester); 
+    void changeHoleLocation(int holeNum, float latitude, float longitude, Golfer tester); 
 
-Golfer golfPro;
-
+    Golfer golfPro;
 };
 
 // Thing 4) library
-
-
 struct Library
 {
-
-struct LibraryCard
+    struct LibraryCard
     {
 //    5 properties:
 //     1) ID number (int)
@@ -994,7 +985,6 @@ struct LibraryCard
         float feesDue = 0.0f;
 //     5) Registration date (double)
         double registrationDate = 00000000;
-
 // 3 things it can do:
 //     1) return a list of books checked out
         std::string allBooksCheckedOut(); // returns a printout of titles of all books             checked out by that card
@@ -1002,185 +992,167 @@ struct LibraryCard
         float calculateYearlyFeesOwed(int year); // returns total fees owed for given              year
 //     3) grant access to computer terminal
         void grantComputerAccess(float duration = 1.0f);
-
     };
-
 // 5 properties:
 //     1) number of books (double)
-double numBooks = 35000;
+    double numBooks = 35000;
 //     2) number of library cards/users (double)
-double totalLibraryCards = 10000;
+    double totalLibraryCards = 10000;
 //     3) number of employees/volunteers (int)
-int numEmployees = 20;
+    int numEmployees = 20;
 //     4) book/media checkout periods, in days (int)
-int checkoutPeriod = 14;
+    int checkoutPeriod = 14;
 //     5) late fees, amounts, etc. per day (float)
-float lateFee = .35f; 
+    float lateFee = .35f; 
 // 3 things it can do:
 //     1) host a book sale
-void hostBookSale(double date, int numBooks, std::string saleName);
+    void hostBookSale(double date, int numBooks, std::string saleName);
 //     2) check a book out to a library card
-bool checkOutBook(LibraryCard libraryCard); // returns true to denote book as checked out
+    bool checkOutBook(LibraryCard libraryCard); // returns true to denote book as checked out
 //     3) suspend privileges to user with delinquent checkouts/fees
-bool suspendCheckoutPrivileges(LibraryCard libraryCard); // returns false to suspend user privileges until determined threshold is met
+    bool suspendCheckoutPrivileges(LibraryCard libraryCard); // returns false to suspend user privileges until determined threshold is met
 
-LibraryCard memberOfTheMonth;
-
-    
+    LibraryCard memberOfTheMonth;  
 };
-    
+
 // Thing 5) Drumhead
-
-
 struct Drumhead
 {
 // 5 properties:
 //     1) diameter, in inches (int)
-int diameter = 14;
+    int diameter = 14;
 //     2) ply thickness, in mm (float)
-float plyThickness = 10.0f;
+    float plyThickness = 10.0f;
 //     3) number of plies (int)
-int plies = 1;
+    int plies = 1;
 //     4) brand (std::string)
-std::string brand = "Remo";
+    std::string brand = "Remo";
 //     5) material (std::string)
-std::string material = "film";
+    std::string material = "film";
 // 3 things it can do:
 //     1) wrinkle
-void wrinkle();
+    void wrinkle();
 //     2) break
-bool breakDrumhead(); // returns true to alert SnareDrum struct that something is broken
+    bool breakDrumhead(); // returns true to alert SnareDrum struct that something is broken
 //     3) tighten/loosen
-void tighten(float tension);
-void loosen(float tension);
+    void tighten(float tension);
+    void loosen(float tension);
 };
 
 // Thing 6) Snare Wires
-
-
 struct SnareWires
 {
 // 5 properties:
 //     1) number of wires (int)
-int numWires = 20;
+    int numWires = 20;
 //     2) material (std::string)
-std::string material = "steel";
+    std::string material = "steel";
 //     3) wire gauge, in mm (float)
-float wireGauge = .6f;
+    float wireGauge = .6f;
 //     4) brand (std::string)
-std::string brand = "Puresound";
+    std::string brand = "Puresound";
 //     5) with straps/without straps (bool)
-bool withStraps = false;
+    bool withStraps = false;
 // 3 things it can do:
 //     1) crack
-void crack();
+    void crack();
 //     2) buzz
-void buzz();
+    void buzz();
 //     3) break a wire
-bool breakSnareWires(); // returns true to alert SnareDrum struct that something is broken
+    bool breakSnareWires(); // returns true to alert SnareDrum struct that something is broken
 };
 
 // Thing 7) Snare Strainer
-
-
 struct SnareStrainer
 {
 // 5 properties:
 //     1) mounting distance, in inches (float)
-float mountingDistance = 2.0f;
+    float mountingDistance = 2.0f;
 //     2) number of mounting screws (int)
-int numMountingScrews = 2;
+    int numMountingScrews = 2;
 //     3) maximum tension, in poundsforce (float)
-float maximumTension = 12.5f;
+    float maximumTension = 12.5f;
 //     4) brand (std::string)
-std::string brand = "Ludwig";
+    std::string brand = "Ludwig";
 //     5) type (std::string)
-std::string strainerType = "side-action";
+    std::string strainerType = "side-action";
 // 3 things it can do:
 //     1) engage snares
-bool engageSnares(); // returns true to snareWires
+    bool engageSnares(); // returns true to snareWires
 //     2) disengage snares
-bool disengageSnares(); // returns false to snareWires
+    bool disengageSnares(); // returns false to snareWires
 //     3) tighten snares
-float tightenSnares(SnareWires* snareWires, float tension); // tightens or loosens snareWires by given tension
+    float tightenSnares(SnareWires* snareWires, float tension); // tightens or loosens snareWires by given tension
 };
 
 // Thing 8) Drum Shell
-
-
 struct DrumShell
 {
 // 5 properties:
 //     1) brand (std::string)
-std::string brand = "Pearl";
+    std::string brand = "Pearl";
 //     2) material (std::string)
-std::string material = "birch";
+    std::string material = "birch";
 //     3) diameter, in inches (int)
-int diameter = 14;
+    int diameter = 14;
 //     4) bearing edge angle (float)
-float bearingEdgeAngle = 45.0f;
+    float bearingEdgeAngle = 45.0f;
 //     5) depth, in inches (float)
-float depth = 5.5f;
+    float depth = 5.5f;
 // 3 things it can do:
 //     1) crack
-bool crackShell(); // returns true to alert SnareDrum struct that something is broken
+    bool crackShell(); // returns true to alert SnareDrum struct that something is broken
 //     2) be vented
-void beVented(int numHoles, float holeDiameter);
+    void beVented(int numHoles, float holeDiameter);
 //     3) resonate
-void resonate(float velocity);
+    void resonate(float velocity);
 };
 
 // Thing 9) Lugs
-
-
 struct Lug
 {
 // 5 properties:
 //     1) brand (std::string)
-std::string brand = "Pearl";
+    std::string brand = "Pearl";
 //     2) length (float)
-float length = 2.0f;
+    float length = 2.0f;
 //     3) single-sided? (bool)
-bool singleSided = false;
+    bool singleSided = false;
 //     4) decoupled? (bool)
-bool decoupled = true;
+    bool decoupled = true;
 //     5) material (std::string)
-std::string material = "steel";
+    std::string material = "steel";
 // 3 things it can do:
 //     1) tighten drum head
-void tightenDrumhead(float tension);
+    void tightenDrumhead(float tension);
 //     2) loosen drum head
-void loosenDrumhead(float tension);
+    void loosenDrumhead(float tension);
 //     3) overtighten
-bool overtighten(); // returns true to alert SnareDrum struct that something is broken
+    bool overtighten(); // returns true to alert SnareDrum struct that something is broken
 };
 
 // Thing 10) Snare Drum
-
-
 struct SnareDrum
 {
 // 5 properties:
 //     1) Drumhead
-Drumhead drumhead;
+    Drumhead drumhead;
 //     2) Snare Wires
-SnareWires snareWires;
+    SnareWires snareWires;
 //     3) Snare Strainer
-SnareStrainer snareStrainer;
+    SnareStrainer snareStrainer;
 //     4) Drumshell
-DrumShell drumshell;
+    DrumShell drumshell;
 //     5) Lugs
-Lug lug1, lug2, lug3, lug4, lug5, lug6, lug7, lug8;
+    Lug lug1, lug2, lug3, lug4, lug5, lug6, lug7, lug8;
 // 3 things it can do:
 //     1) drive backbeat
-void driveBackbeat(float bpm);
+    void driveBackbeat(float bpm);
 //     2) define drum sound
-void defineDrumSound();
+    void defineDrumSound();
 //     3) break
-bool breakDrum(); // returns true until fixed
+    bool breakDrum(); // returns true until fixed
 };
-
-
 /*
 =================
 Part 1e - Step 18: Commit
