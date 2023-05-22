@@ -874,6 +874,25 @@ Fix anything that needs fixing
 You should see "good to go" in the program output
 */
 
+/*
+=================
+Part 1e - Step 18: Commit
+=================
+Now that you've made changes, make a commit!
+Be sure to make the commit message meaningful.
+*/
+
+/*
+=================
+Part 1e - Step 19: Request a review
+=================
+*/
+} //end namespace Part1E_Instructions
+
+/*
+paste your code below
+*/
+
 // Thing 1) exercise bike 
 struct ExerciseBike
 {
@@ -1153,32 +1172,6 @@ struct SnareDrum
 //     3) break
     bool breakDrum(); // returns true until fixed
 };
-/*
-=================
-Part 1e - Step 18: Commit
-=================
-Now that you've made changes, make a commit!
-Be sure to make the commit message meaningful.
-*/
-
-/*
-=================
-Part 1e - Step 19: Request a review
-=================
-*/
-} //end namespace Part1E_Instructions
-
-/*
-paste your code below
-*/
-
-
-
-
-
-
-
-
 
 int main()
 {
