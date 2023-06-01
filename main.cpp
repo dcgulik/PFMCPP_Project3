@@ -218,11 +218,13 @@ struct DepartmentStore
 
 bool DepartmentStore::open()
 {
+    std::cout << "Store Open!" << std::endl;
     return 1;
 }
 
 bool DepartmentStore::close()
 {
+    std::cout << "Store Closed." << std::endl;
     return 0;
 }
 
