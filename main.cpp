@@ -128,7 +128,7 @@ struct Person
     
         void stepForward(int howFast)
         {
-            std::cout<<"Stepped forward"<<stepSize()*howFast<<"."<<std::endl;
+            std::cout << "Stepped forward" << stepSize()*howFast << "." << std::endl;
         }
     };
 
@@ -187,7 +187,7 @@ struct ExerciseBike
 
 void ExerciseBike::beginWorkoutProgram(int selectedProgram)
 {
-    std::cout<<"Beginning Workout #"<<selectedProgram<<std::endl;
+    std::cout << "Beginning Workout #" << selectedProgram << std::endl;
 }
 
 float ExerciseBike::readPulse()
@@ -198,7 +198,7 @@ float ExerciseBike::readPulse()
 
 float ExerciseBike::calculateCaloricBurn(float weight, float timeSpent)
 {
-    std::cout<<"Calculating caloric burn..."<<std::endl;
+    std::cout << "Calculating caloric burn..." << std::endl;
     return weight * readPulse() * timeSpent;
 }
 
@@ -228,16 +228,17 @@ bool DepartmentStore::close()
 
 void DepartmentStore::hostSale(float discountRate)
 {
-    std::cout<<"We're having a sale! Enjoy "<<discountRate<<"% off!"<<std::endl;
+    std::cout << "We're having a sale! Enjoy " << discountRate << "% off!" << std::endl;
 }
 
 float DepartmentStore::sellItem(std::string itemName, float price, float taxRate, bool isOnSale, float discountRate)
 {
     float totalPrice = price;
-    if(isOnSale) totalPrice -= (totalPrice * discountRate);
+    if(isOnSale) 
+        totalPrice -= (totalPrice * discountRate);
     totalPrice += (totalPrice * taxRate);
     
-    std::cout<<"Sold!"<<itemName<<" has sold for "<<totalPrice<<std::endl;
+    std::cout << "Sold!" << itemName << " has sold for " << totalPrice << std::endl;
     
     return totalPrice;
 }
@@ -287,30 +288,27 @@ float GolfCourse::Golfer::chip(float power, float accuracy, float distanceToTee)
 
 void GolfCourse::hostTournament(int numParticipants, int tournamentDate, float purse, float firstPlacePercentage, float secondPlacePercentage, float thirdPlacePercentage)
 {
-    std::cout<<"It's a golf tournament!"<<std::endl;
-    std::cout<<numParticipants<<" will gather on "<<tournamentDate<<"to compete for "<<purse<<" in winnings!"<<std::endl;
-    std::cout<<"1st prize will win: "<<purse * firstPlacePercentage<<std::endl;
-    std::cout<<"2nd prize will win: "<<purse * secondPlacePercentage<<std::endl;
-    std::cout<<"3rd prize will win: "<<purse * thirdPlacePercentage<<std::endl;
+    std::cout << "It's a golf tournament!" << std::endl;
+    std::cout << numParticipants << " will gather on " << tournamentDate << "to compete for " << purse << " in winnings!" << std::endl;
+    std::cout << "1st prize will win: " << purse * firstPlacePercentage << std::endl;
+    std::cout << "2nd prize will win: " << purse * secondPlacePercentage << std::endl;
+    std::cout << "3rd prize will win: " << purse * thirdPlacePercentage << std::endl;
 }
 
 bool GolfCourse::suspendPlay(float duration)
 {
     if(duration == 0.0f) 
     {
-        std::cout<<"No suspension necessary!";
+        std::cout << "No suspension necessary!";
         return 1;
     }
-    else
-    {
-        std::cout<<"Play will be suspended for "<<duration<<std::endl;
-        return 0;
-    }
+    std::cout << "Play will be suspended for " << duration << std::endl;
+    return 0;
 }
 
 void GolfCourse::changeHoleLocation(int holeNum, float latitude, float longitude, Golfer tester)
 {
-    std::cout<<"Hole at #"<<holeNum<<" has been moved to "<<latitude<<"x"<<longitude<<". "<<tester.name<<" has verified fair placement."<<std::endl;
+    std::cout << "Hole at #" << holeNum << " has been moved to " << latitude << "x" << longitude << ". " << tester.name << " has verified fair placement." << std::endl;
 }
 
 struct Library
@@ -350,46 +348,40 @@ std::string Library::LibraryCard::allBooksCheckedOut()
 
 float Library::LibraryCard::calculateYearlyFeesOwed(int year)
 {
-    std::cout<<iDNumber<<"owed "<<feesDue<<" in "<<year<<"."<<std::endl;
+    std::cout << iDNumber << "owed " << feesDue << " in " << year << "." << std::endl;
     return feesDue;
 }
 
 void Library::LibraryCard::grantComputerAccess(float duration)
 {
-    std::cout<<"Success! Computer access granted for "<<duration<<"hours. Enjoy!"<<std::endl;
+    std::cout << "Success! Computer access granted for " << duration << "hours. Enjoy!" << std::endl;
 }
 
 void Library::hostBookSale(double date, int numBooksForSale, std::string saleName)
 {
-    std::cout<<"It's a book sale! "<<saleName<<" will be held on "<<date<<". Choose from "<<numBooksForSale<<"books and support your local library!"<<std::endl;
+    std::cout << "It's a book sale! " << saleName << " will be held on " << date << ". Choose from " << numBooksForSale << "books and support your local library!" << std::endl;
 }
 
 bool Library::checkOutBook(LibraryCard libraryCard)
 {
     if(libraryCard.feesDue > 1000000.0f)
     {
-        std::cout<<"Error: "<<libraryCard.iDNumber<<"owes more than one million dollars in late fees!";
+        std::cout << "Error: " << libraryCard.iDNumber << "owes more than one million dollars in late fees!";
         return 0;
     }
-    else
-    {
-        std::cout<<"Book checked out to"<<libraryCard.iDNumber;
-        return 1;
-    }
+    std::cout << "Book checked out to" << libraryCard.iDNumber;
+    return 1;
 }
 
 bool Library::suspendCheckoutPrivileges(LibraryCard libraryCard)
 {
     if (libraryCard.feesDue > 1000000.0f)
     {
-        std::cout<<"Fees due total over one million dollars. Checkout privileges suspended."<<std::endl;
+        std::cout << "Fees due total over one million dollars. Checkout privileges suspended." << std::endl;
         return 0;
     }
-    else
-    {
-        std::cout<<"Fees insufficient for suspension. :("<<std::endl;
+        std::cout << "Fees insufficient for suspension. :(" << std::endl;
         return 1;
-    }
 }
 
 
@@ -409,23 +401,23 @@ struct Drumhead
 
 void Drumhead::wrinkle()
 {
-    std::cout<<"Drumhead has wrinkled..."<<std::endl;
+    std::cout << "Drumhead has wrinkled..." << std::endl;
 }
 
 bool Drumhead::breakDrumhead()
 {
-    std::cout<<"Drumhead has broken!"<<std::endl;
+    std::cout << "Drumhead has broken!" << std::endl;
     return 1;
 }
 
 void Drumhead::tighten(float tension)
 {
-    std::cout<<"Drumhead has been tightened by "<<tension<<"."<<std::endl;
+    std::cout << "Drumhead has been tightened by " << tension << "." << std::endl;
 }
 
 void Drumhead::loosen(float tension)
 {
-    std::cout<<"Drumhead has been loosened by "<<tension<<"."<<std::endl;
+    std::cout << "Drumhead has been loosened by " << tension << "." << std::endl;
 }
 
 struct SnareWires
@@ -443,17 +435,17 @@ struct SnareWires
 
 void SnareWires::crack()
 {
-    std::cout<<"Crack!"<<std::endl;
+    std::cout << "Crack!" << std::endl;
 }
 
 void SnareWires::buzz()
 {
-    std::cout<<"Bzzzzzzz..."<<std::endl;
+    std::cout << "Bzzzzzzz..." << std::endl;
 }
 
 bool SnareWires::breakSnareWires()
 {
-    std::cout<<"Snare wires have broken!"<<std::endl;
+    std::cout << "Snare wires have broken!" << std::endl;
     return 1;
 }
 
@@ -472,19 +464,19 @@ struct SnareStrainer
 
 bool SnareStrainer::engageSnares()
 {
-    std::cout<<"Snares engaged!"<<std::endl;
+    std::cout << "Snares engaged!" << std::endl;
     return 1;
 }
 
 bool SnareStrainer::disengageSnares()
 {
-    std::cout<<"Snares disengaged."<<std::endl;
+    std::cout << "Snares disengaged." << std::endl;
     return 0;
 }
 
 float SnareStrainer::tightenSnares(SnareWires *snareWires, float tension)
 {
-    std::cout<<snareWires<<"have been tightened by "<<tension<<"."<<std::endl;
+    std::cout << snareWires << "have been tightened by " << tension << "." << std::endl;
     return tension;
 }
 
@@ -504,19 +496,21 @@ struct DrumShell
 
 bool DrumShell::crackShell()
 {
-    std::cout<<"Drum shell has cracked!"<<std::endl;
+    std::cout << "Drum shell has cracked!" << std::endl;
     return 1;
 }
 
 void DrumShell::beVented(int numHoles, float holeDiameter)
 {
-    std::cout<<"Drum shell has been vented with "<<numHoles<<"holes of "<<holeDiameter<<" in. in diameter."<<std::endl;
+    std::cout << "Drum shell has been vented with " << numHoles << "holes of " << holeDiameter << " in. in diameter." << std::endl;
 }
 
 void DrumShell::resonate(float velocity)
 {
-    if(velocity < 35.0f) std::cout<<"no resonance..."<<std::endl;
-    else std::cout<<"resonance with "<<velocity<<" velocity!"<<std::endl;
+    if(velocity < 35.0f) 
+        std::cout << "no resonance..." << std::endl;
+    else 
+        std::cout << "resonance with " << velocity << " velocity!" << std::endl;
 }
 
 struct Lug
@@ -534,17 +528,17 @@ struct Lug
 
 void Lug::tightenDrumhead(float tension)
 {
-    std::cout<<"Drumhead tightened by "<<tension<<"."<<std::endl;
+    std::cout << "Drumhead tightened by " << tension << "." << std::endl;
 }
 
 void Lug::loosenDrumhead(float tension)
 {
-    std::cout<<"Drumhead loosened by "<<tension<<"."<<std::endl;
+    std::cout << "Drumhead loosened by " << tension << "." << std::endl;
 }
 
 bool Lug::overtighten()
 {
-    std::cout<<"Lug has overtightened!"<<std::endl;
+    std::cout << "Lug has overtightened!" << std::endl;
     return 1;
 }
 
@@ -563,22 +557,22 @@ struct SnareDrum
 
 void SnareDrum::driveBackbeat(float bpm)
 {
-    std::cout<<"Ready? 1, 2, 3, 4..."<<std::endl;
-    std::cout<<"That's a groovy "<<bpm<<" bpm backbeat!"<<std::endl;
+    std::cout << "Ready? 1, 2, 3, 4..." << std::endl;
+    std::cout << "That's a groovy " << bpm << " bpm backbeat!" << std::endl;
 }
 
 void SnareDrum::defineDrumSound()
 {
-    std::cout<<"Wow, what a unique drum sound!"<<std::endl;
+    std::cout << "Wow, what a unique drum sound!" << std::endl;
 }
 
 bool SnareDrum::breakDrum()
 {
-    std::cout<<"Snare drum broken!"<<std::endl;
+    std::cout << "Snare drum broken!" << std::endl;
     return 1;
 }
 
 int main()
 {
-    std::cout << "good to go!" << std::endl;
+    std::cout  <<  "good to go!"  <<  std::endl;
 }
