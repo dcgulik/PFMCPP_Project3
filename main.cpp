@@ -266,7 +266,7 @@ struct GolfCourse
         float chip(float power, float accuracy, float distanceToTee);
     };
 
-    void hostTournament(int numParticipants, int tournamentDate, float purse, float firstPlacePercentage,         float secondPlacePercentage, float thirdPlacePercentage); 
+    void hostTournament(int numParticipants, int tournamentDate, float purse, float firstPlacePercentage, float secondPlacePercentage, float thirdPlacePercentage); 
     bool suspendPlay(float duration);
     void changeHoleLocation(int holeNum, float latitude, float longitude, Golfer tester); 
 
